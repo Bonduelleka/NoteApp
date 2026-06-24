@@ -1,0 +1,56 @@
+﻿@model NotesApp.Models.Category
+
+@{
+    ViewData["Title"] = "Детали категории";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header bg-info text-white">
+                <h3><i class="fas fa-tag"></i> @Model.Title</h3>
+            </div>
+            <div class="card-body">
+                <dl class="row">
+                    <dt class="col-sm-3">ID</dt>
+                    <dd class="col-sm-9">@Model.Id</dd>
+                    
+                    <dt class="col-sm-3">Название</dt>
+                    <dd class="col-sm-9">@Model.Title</dd>
+                    
+                    <dt class="col-sm-3">Описание</dt>
+                    <dd class="col-sm-9">@Html.Raw((Model.Description ?? "Нет описания").Replace("\n", "<br/>"))</dd>
+                    
+                    <dt class="col-sm-3">Заметки в категории</dt>
+                    <dd class="col-sm-9">
+                        @if (Model.Notes.Any())
+                        {
+                            <ul>
+                                @foreach (var note in Model.Notes)
+                                {
+                                    <li>
+                                        <a href="@Url.Action("Details", "Note", new { id = note.Id })">@note.Title</a>
+                                        (@note.Date.ToString("dd.MM.yyyy"))
+                                    </li>
+                                }
+                            </ul>
+                        }
+                        else
+                        {
+                            <span class="text-muted">Нет заметок в этой категории</span>
+                        }
+                    </dd>
+                </dl>
+                
+                <div class="mt-3">
+                    <a href="@Url.Action("Edit", new { id = Model.Id })" class="btn btn-warning">
+                        <i class="fas fa-edit"></i> Редактировать
+                    </a>
+                    <a href="@Url.Action("All")" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i> Назад к списку
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

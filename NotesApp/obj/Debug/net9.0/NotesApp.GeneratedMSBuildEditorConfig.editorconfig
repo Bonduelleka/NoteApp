@@ -1,0 +1,109 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = NotesApp
+build_property.RootNamespace = NotesApp
+build_property.ProjectDir = H:\University\6sem\Технология разработки программного обеспечения\Task6\NotesApp\NotesApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = H:\University\6sem\Технология разработки программного обеспечения\Task6\NotesApp\NotesApp
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[H:/University/6sem/Технология разработки программного обеспечения/Task6/NotesApp/NotesApp/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/University/6sem/Технология разработки программного обеспечения/Task6/NotesApp/NotesApp/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/University/6sem/Технология разработки программного обеспечения/Task6/NotesApp/NotesApp/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/University/6sem/Технология разработки программного обеспечения/Task6/NotesApp/NotesApp/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/University/6sem/Технология разработки программного обеспечения/Task6/NotesApp/NotesApp/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/University/6sem/Технология разработки программного обеспечения/Task6/NotesApp/NotesApp/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/University/6sem/Технология разработки программного обеспечения/Task6/NotesApp/NotesApp/Views/Category/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/University/6sem/Технология разработки программного обеспечения/Task6/NotesApp/NotesApp/Views/Category/All.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/University/6sem/Технология разработки программного обеспечения/Task6/NotesApp/NotesApp/Views/Category/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/University/6sem/Технология разработки программного обеспечения/Task6/NotesApp/NotesApp/Views/Category/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/University/6sem/Технология разработки программного обеспечения/Task6/NotesApp/NotesApp/Views/Note/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90ZVxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/University/6sem/Технология разработки программного обеспечения/Task6/NotesApp/NotesApp/Views/Note/All.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90ZVxBbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/University/6sem/Технология разработки программного обеспечения/Task6/NotesApp/NotesApp/Views/Note/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90ZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/University/6sem/Технология разработки программного обеспечения/Task6/NotesApp/NotesApp/Views/Note/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90ZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/University/6sem/Технология разработки программного обеспечения/Task6/NotesApp/NotesApp/Views/Note/Filter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90ZVxGaWx0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/University/6sem/Технология разработки программного обеспечения/Task6/NotesApp/NotesApp/Views/Note/Stat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90ZVxTdGF0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/University/6sem/Технология разработки программного обеспечения/Task6/NotesApp/NotesApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/University/6sem/Технология разработки программного обеспечения/Task6/NotesApp/NotesApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/University/6sem/Технология разработки программного обеспечения/Task6/NotesApp/NotesApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/University/6sem/Технология разработки программного обеспечения/Task6/NotesApp/NotesApp/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-s5txsu2g3z

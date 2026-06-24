@@ -1,0 +1,92 @@
+﻿@{
+    ViewData["Title"] = "Статистика";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h1><i class="fas fa-chart-bar"></i> Статистика заметок</h1>
+        <hr />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card text-center bg-primary text-white">
+            <div class="card-body">
+                <h2>@ViewData["Count"]</h2>
+                <p class="mb-0">Всего заметок</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card text-center bg-success text-white">
+            <div class="card-body">
+                <h2>@ViewData["MinDate"]</h2>
+                <p class="mb-0">Самая старая заметка</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card text-center bg-info text-white">
+            <div class="card-body">
+                <h2>@ViewData["MaxDate"]</h2>
+                <p class="mb-0">Самая новая заметка</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="fas fa-tags"></i> Уникальные заголовки</h5>
+            </div>
+            <div class="card-body">
+                @{
+                    var titles = ViewData["UniqueTitles"] as List<string>;
+                    if (titles != null && titles.Any())
+                    {
+                        <ul class="list-group">
+                            @foreach (var title in titles)
+                            {
+                                <li class="list-group-item">@title</li>
+                            }
+                        </ul>
+                    }
+                    else
+                    {
+                        <p class="text-muted">Нет данных</p>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="fas fa-chart-pie"></i> Быстрые ссылки</h5>
+            </div>
+            <div class="card-body">
+                <div class="d-grid gap-2">
+                    <a href="@Url.Action("All")" class="btn btn-primary">
+                        <i class="fas fa-list"></i> Все заметки
+                    </a>
+                    <a href="@Url.Action("Add")" class="btn btn-success">
+                        <i class="fas fa-plus"></i> Создать заметку
+                    </a>
+                    <a href="@Url.Action("Filter")" class="btn btn-info">
+                        <i class="fas fa-filter"></i> Фильтр по дате
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a href="@Url.Action("All")" class="btn btn-outline-secondary mt-3">
+    <i class="fas fa-home"></i> На главную
+</a>

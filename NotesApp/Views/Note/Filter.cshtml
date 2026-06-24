@@ -1,0 +1,83 @@
+﻿@model List<NotesApp.Models.Note>
+
+@{
+    ViewData["Title"] = "Фильтр по дате";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card mb-4">
+            <div class="card-header bg-info text-white">
+                <h3><i class="fas fa-filter"></i> Фильтр заметок по периоду</h3>
+            </div>
+            <div class="card-body">
+                <form method="get" class="row g-3">
+                    <div class="col-md-5">
+                        <label>С даты</label>
+                        <input type="date" name="start" class="form-control" value="@ViewData["Start"]" />
+                    </div>
+                    <div class="col-md-5">
+                        <label>По дату</label>
+                        <input type="date" name="end" class="form-control" value="@ViewData["End"]" />
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end">
+                        <button type="submit" class="btn btn-primary w-100">
+                            <i class="fas fa-search"></i> Искать
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (!string.IsNullOrEmpty(ViewData["Start"]?.ToString()) && !string.IsNullOrEmpty(ViewData["End"]?.ToString()))
+{
+    <div class="alert alert-info">
+        <i class="fas fa-calendar-alt"></i> Показаны заметки за период: <strong>@ViewData["Start"]</strong> — <strong>@ViewData["End"]</strong>
+    </div>
+}
+
+@if (!Model.Any())
+{
+    <div class="alert alert-warning">
+        <i class="fas fa-info-circle"></i> Заметки не найдены. Выберите период и нажмите "Искать".
+    </div>
+}
+else
+{
+    <div class="row">
+        @foreach (var note in Model)
+        {
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">@note.Title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            <i class="far fa-calendar-alt"></i> @note.Date.ToString("dd.MM.yyyy")
+                        </h6>
+                        <p class="card-text">@(note.Description.Length > 100 ? note.Description.Substring(0, 100) + "..." : note.Description)</p>
+                        
+                        @if (note.Categories.Any())
+                        {
+                            <div class="mb-2">
+                                @foreach (var cat in note.Categories)
+                                {
+                                    <span class="badge bg-info">@cat.Title</span>
+                                }
+                            </div>
+                        }
+                        
+                        <a href="@Url.Action("Details", new { id = note.Id })" class="btn btn-sm btn-info">
+                            <i class="fas fa-eye"></i> Подробнее
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+<a href="@Url.Action("All")" class="btn btn-outline-secondary mt-3">
+    <i class="fas fa-arrow-left"></i> Назад
+</a>
