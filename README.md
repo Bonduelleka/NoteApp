@@ -1,11 +1,11 @@
 # NoteApp
 
-Приложение для ведения заметок.
+NoteApp — это веб-приложение для личного управления заметками. Оно позволяет создавать, редактировать, удалять заметки, распределять их по категориям и отслеживать свою активность. Проект создан для изучения ASP.NET Core MVC и Entity Framework Core.
 
 ## Скриншоты
 
-<img width="720" height="588" alt="image" src="https://github.com/user-attachments/assets/b6c638bb-b4d2-460c-b727-de53c6a39464" />
-<img width="729" height="726" alt="image" src="https://github.com/user-attachments/assets/730e400a-ccfa-4e42-93e6-bdd3963f230e" />
+[Главная страница]<img width="720" height="588" alt="image" src="https://github.com/user-attachments/assets/b6c638bb-b4d2-460c-b727-de53c6a39464" />
+[Статистика]<img width="729" height="726" alt="image" src="https://github.com/user-attachments/assets/730e400a-ccfa-4e42-93e6-bdd3963f230e" />
 
 ## Технологии
 
