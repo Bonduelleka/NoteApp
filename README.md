@@ -9,8 +9,8 @@ NoteApp — это веб-приложение для личного управ�
 
 ## Технологии
 
-- C# / .NET Core (версия)
-- ASP.NET Core MVC / WPF
+- C# / .NET Core 9.0
+- ASP.NET Core MVC
 - Entity Framework Core
 - PostgreSQL
 
